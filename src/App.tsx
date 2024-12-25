@@ -19,9 +19,12 @@ const App = () => {
   const submitDisabled = !item;
   return (
     <div
-      id='App'
+      className='ui text container'
+      id='app'
     >
-      <table>
+      <table 
+        className='ui selectable structured large table'
+      >
         <thead>
           <tr>
             <th>Items</th>
@@ -40,10 +43,13 @@ const App = () => {
           <tr>
             <th>
               <form
+                className='ui form'
                 onSubmit={addItem}
               >
-                <div>
-                  <input 
+                <div 
+                  className='field'>
+                  <input
+                    className='prompt' 
                     type="text" 
                     placeholder='Add item...' 
                     value={item}
@@ -51,6 +57,7 @@ const App = () => {
                   />
                 </div>
                 <button
+                  className='ui button'
                   disabled={submitDisabled}
                 >
                   Add item
