@@ -57,6 +57,7 @@ const App = () => {
                   />
                 </div>
                 <button
+                  type='button'
                   className='ui button'
                   disabled={submitDisabled}
                 >
